@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_batch" android:icon="@drawable/ic_batch" android:title="@string/nav_batch" />
+    <item android:id="@+id/nav_plan" android:icon="@drawable/ic_plan" android:title="@string/nav_plan" />
+    <item android:id="@+id/nav_check" android:icon="@drawable/ic_check" android:title="@string/nav_check" />
+    <item android:id="@+id/nav_tally" android:icon="@drawable/ic_tally" android:title="@string/nav_tally" />
+</menu>

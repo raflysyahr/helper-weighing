@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Helper Weighing</string>
+
+    <string name="nav_batch">Batch</string>
+    <string name="nav_plan">Rencana</string>
+    <string name="nav_check">Cek</string>
+    <string name="nav_tally">Tally</string>
+
+    <string name="unit_m3">m³</string>
+    <string name="unit_kgm3">kg/m³</string>
+    <string name="unit_pct">%</string>
+    <string name="btn_reset">Reset</string>
+    <string name="btn_save">Simpan</string>
+    <string name="btn_delete">Hapus</string>
+    <string name="btn_load">Muat</string>
+    <string name="fmt_kg">%1$s kg</string>
+    <string name="fmt_range">Min %1$s – Maks %2$s kg</string>
+    <string name="fmt_left">Sisa %1$s kg</string>
+    <string name="fmt_over">Lebih %1$s kg</string>
+    <string name="hint_target">Target</string>
+    <string name="hint_tol">Toleransi</string>
+
+    <string name="title_batch">Hitung Batch</string>
+    <string name="sub_batch">Isi desain per m³, target timbang terhitung otomatis.</string>
+    <string name="hint_volume">Volume batch</string>
+    <string name="hint_design">Desain</string>
+    <string name="hint_moist">Kadar air</string>
+    <string name="section_materials">Bahan (desain per m³)</string>
+    <string name="section_result">Target timbang</string>
+    <string name="mat_cement">Semen</string>
+    <string name="mat_sand">Pasir</string>
+    <string name="mat_stone">Batu</string>
+    <string name="mat_water">Air</string>
+    <string name="mat_admix">Aditif</string>
+    <string name="fmt_total">Total %1$s kg</string>
+    <string name="note_water">Koreksi air dari kadar air agregat: %1$s kg</string>
+    <string name="title_load">Muat preset</string>
+    <string name="title_save">Simpan preset</string>
+    <string name="title_delete">Hapus preset</string>
+    <string name="preset_name">Nama preset (mis. K-300)</string>
+    <string name="msg_no_preset">Belum ada preset tersimpan</string>
+    <string name="msg_saved">Preset disimpan: %1$s</string>
+    <string name="msg_deleted">Preset dihapus: %1$s</string>
+    <string name="confirm_delete">Hapus preset %1$s?</string>
+
+    <string name="title_plan">Rencana Batch</string>
+    <string name="sub_plan">Bagi total pesanan sesuai kapasitas mixer.</string>
+    <string name="hint_total">Total pesanan</string>
+    <string name="hint_cap">Kapasitas mixer</string>
+    <string name="plan_balanced">Seimbang (ukuran sama)</string>
+    <string name="plan_full">Penuh + sisa</string>
+    <string name="fmt_plan_n">%1$d batch × %2$s m³</string>
+    <string name="fmt_plan_rest">+ 1 batch × %1$s m³</string>
+
+    <string name="title_check">Cek Timbang</string>
+    <string name="sub_check">Bandingkan pembacaan timbangan dengan target.</string>
+    <string name="hint_read">Pembacaan</string>
+    <string name="hint_tare">Tara</string>
+    <string name="status_idle">Isi target</string>
+    <string name="status_low">KURANG</string>
+    <string name="status_ok">OK</string>
+    <string name="status_high">LEBIH</string>
+    <string name="fmt_net">Netto %1$s kg</string>
+
+    <string name="title_tally">Tally Timbangan</string>
+    <string name="sub_tally">Catat tiap timbangan, total terhitung otomatis.</string>
+    <string name="hint_weight">Berat</string>
+    <string name="hint_target_optional">Target (opsional)</string>
+    <string name="btn_add">Tambah</string>
+    <string name="btn_undo">Batalkan</string>
+    <string name="stat_count">Jumlah</string>
+    <string name="stat_total">Total (kg)</string>
+    <string name="stat_avg">Rata-rata (kg)</string>
+    <string name="fmt_count">%1$d kali</string>
+    <string name="fmt_tally_row">#%1$d     %2$s kg</string>
+    <string name="confirm_reset">Hapus semua catatan tally?</string>
+</resources>

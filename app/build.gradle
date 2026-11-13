@@ -1,0 +1,59 @@
+plugins {
+    id 'com.android.application'
+}
+
+def ciVersionCode = System.getenv("VERSION_CODE") ? System.getenv("VERSION_CODE").toInteger() : 1
+def ciVersionName = System.getenv("VERSION_NAME") ? System.getenv("VERSION_NAME") : "1.0.0"
+def ksPath = System.getenv("KEYSTORE_PATH")
+
+android {
+    namespace 'com.helper.weighing'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.helper.weighing"
+        minSdk 26
+        targetSdk 34
+        versionCode ciVersionCode
+        versionName ciVersionName
+    }
+
+    signingConfigs {
+        release {
+            if (ksPath) {
+                storeFile file(ksPath)
+                storePassword System.getenv("KEYSTORE_PASSWORD")
+                keyAlias System.getenv("KEY_ALIAS")
+                keyPassword System.getenv("KEY_PASSWORD")
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            if (ksPath) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+
+    testImplementation 'junit:junit:4.13.2'
+}
